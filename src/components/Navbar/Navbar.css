@@ -1,0 +1,117 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    padding: 1rem 2rem;  
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-black)  
+}
+
+.nav_logo{
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.nav_logo img{
+    width: 120px;
+}
+a{
+    color:white;
+}
+.app_nav-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.app_nav-links li{
+    margin: 0 1.2rem;
+    cursor: pointer; 
+}
+.app_nav-links li a:hover{
+    color: var(--color-grey);
+}
+
+.navbar_login{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.navbar_login a{
+    margin: 0 1.2rem;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.navbar_login a:hover{
+    border-bottom: 1px solid var(--color-golden);
+}
+
+.navbar_login div{
+    width: 2px;
+    background-color: var(--color-grey);
+    height: 30px;
+}
+
+.navbar_smallScreen{
+    display: none;
+}
+
+.nav_SC_overlay{
+    position: fixed;
+    top: 3rem;
+    padding-top: 2.2rem;
+    padding-bottom: 1rem;
+    right: 1rem;
+    width: 140px;
+    height: fit-content;
+    justify-content: center;
+    background: var(--color-black);
+    transition: 1s ease;
+    border-radius: 5px;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.nav_SC_overlay .overlay_close {
+    font-size: 27px;
+    color: var(--color-golden);
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.nav-SC_links{
+    list-style: none;
+    justify-items: center;
+}
+.nav_SC_overlay li{
+    margin: 0.25rem 1.5rem;
+}
+.nav_SC_overlay li:first-child{
+    margin-top: 1rem;
+}
+@media screen and (max-width: 1150px) {
+    .app_nav-links {
+        display: none;
+    }
+    
+    .navbar_smallScreen{
+        display: flex;
+    }
+}
+
+.icon{
+    right: 5px;
+}
+.menu-icon:hover{
+    transform: scale(1.02);
+    transition: .5;
+}
